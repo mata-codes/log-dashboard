@@ -1,7 +1,17 @@
-import { LogDashboard } from './components/LogDashboard/LogDashboard';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { LogPage } from './features/logs/LogPage';
+import './assets/styles/main.css';
 
-export function App() {
-	return <LogDashboard />;
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LogPage />,
+  },
+  // Aquí agregaremos luego /login, /analytics, /settings
+]);
+
+function App() {
+  return <RouterProvider router={router} />;
 }
 
 export default App;
