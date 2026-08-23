@@ -1,0 +1,36 @@
+:root {
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  
+  --bg-app: var(--gray-50);
+  --bg-surface: #ffffff;
+  --border: 1px solid var(--gray-200);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, sans-serif; }
+
+body { background-color: var(--bg-app); color: var(--gray-900); }
+
+/* Layout & Utils */
+.container { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+.card { background: var(--bg-surface); border: var(--border); border-radius: 8px; padding: 1.5rem; }
+.flex-between { display: flex; justify-content: space-between; align-items: center; }
+.flex-gap { display: flex; gap: 1rem; align-items: center; }
+
+/* Formularios y Tablas */
+.input-control { padding: 0.5rem 1rem; border: var(--border); border-radius: 4px; outline: none; }
+.input-control:focus { border-color: var(--gray-800); }
+
+.data-table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+.data-table th, .data-table td { padding: 1rem; text-align: left; border-bottom: var(--border); }
+.data-table tr { cursor: pointer; transition: background 0.2s; }
+.data-table tr:hover { background: var(--gray-50); }
+
+.badge { padding: 0.25rem 0.5rem; border-radius: 99px; font-size: 0.875rem; font-weight: 600; text-transform: uppercase; }
+.badge.error { background: #fee2e2; color: #991b1b; }
+.badge.info { background: #e0f2fe; color: #075985; }
+.badge.debug { background: var(--gray-200); color: var(--gray-800); }
