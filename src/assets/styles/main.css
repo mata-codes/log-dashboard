@@ -34,3 +34,13 @@ body { background-color: var(--bg-app); color: var(--gray-900); }
 .badge.error { background: #fee2e2; color: #991b1b; }
 .badge.info { background: #e0f2fe; color: #075985; }
 .badge.debug { background: var(--gray-200); color: var(--gray-800); }
+/* Botones */
+.btn { padding: 0.5rem 1rem; border: var(--border); border-radius: 4px; cursor: pointer; font-weight: 500; background: var(--bg-surface); color: var(--gray-900); transition: 0.2s; text-align: center; display: inline-block; text-decoration: none; }
+.btn:hover { background: var(--gray-50); }
+.btn-primary { background: var(--gray-900); color: white; border-color: var(--gray-900); }
+.btn-primary:hover { background: var(--gray-800); }
+.btn-block { width: 100%; display: block; }
+
+/* Grid para el layout de Analytics */
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.grid-1 { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
